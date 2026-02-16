@@ -41,7 +41,7 @@ public class ArtifactTypeTests
         // Assert
         Assert.False(isValid);
         Assert.Single(validationResults);
-        Assert.Equal("The name field may only contain alpha-numeric characters as well as dashes and underscores.", validationResults[0].ErrorMessage);
+        Assert.Equal("The name field may only contain alpha-numeric characters as well as dashes.", validationResults[0].ErrorMessage);
     }
 
     [Fact]
@@ -61,7 +61,7 @@ public class ArtifactTypeTests
         // Assert
         Assert.False(isValid);
         Assert.Single(validationResults);
-        Assert.Equal("The name field may only contain alpha-numeric characters as well as dashes and underscores.", validationResults[0].ErrorMessage);
+        Assert.Equal("The name field may only contain alpha-numeric characters as well as dashes.", validationResults[0].ErrorMessage);
     }
 
     [Theory]
@@ -107,7 +107,7 @@ public class ArtifactTypeTests
 
         // Assert
         Assert.False(isValid);
-        Assert.Contains(validationResults, vr => vr.ErrorMessage == "The name field may only contain alpha-numeric characters as well as dashes and underscores.");
+        Assert.Contains(validationResults, vr => vr.ErrorMessage == "The name field may only contain alpha-numeric characters as well as dashes.");
     }
 
     [Fact]
