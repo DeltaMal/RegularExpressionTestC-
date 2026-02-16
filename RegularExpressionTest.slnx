@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/RegularExpressionTest/RegularExpressionTest.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/RegularExpressionTest.Tests/RegularExpressionTest.Tests.csproj" />
+  </Folder>
+</Solution>
